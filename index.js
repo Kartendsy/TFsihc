@@ -37,5 +37,10 @@ async function startGame() {
 }
 
 
-setup_data_user();
-startGame();
+(async () => {
+    await setup_data_user();
+    await startGame();
+})()
+
+
+
