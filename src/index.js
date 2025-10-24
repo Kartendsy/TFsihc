@@ -7,7 +7,7 @@ async function start() {
             console.log(resp);
         });
 
-    fetch("https://dogapi.dog/api/v2/breeds")
+    await fetch("https://dogapi.dog/api/v2/breeds")
         .then(resp => resp)
         .then(data => console.log(data))
 }
