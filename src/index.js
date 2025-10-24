@@ -26,7 +26,8 @@ async function start() {
 
 
     K.add([
-        sprite("sungai")
+        sprite("sungai"),
+        pos(0, 100)
     ])
 }
 
