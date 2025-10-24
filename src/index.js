@@ -53,6 +53,11 @@ async function start() {
         pos(0, -100)
     ])
     player.play("empty");
+
+    function start_fish() {
+        console.log("WWW");
+        
+    }
 }
 
 setup_user();
