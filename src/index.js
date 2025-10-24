@@ -11,7 +11,6 @@ const supabase = createClient("https://zcuxsqfqmxzjnigimmya.supabase.co","eyJhbG
 const tg = window.Telegram.WebApp;
 
 let curr_anim = 0;
-let anims = ["empty", "pos1"];
 
 async function setup_user() {
     const user = tg.initDataUnsafe?.user;
