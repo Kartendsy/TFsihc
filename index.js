@@ -38,8 +38,7 @@ async function startGame() {
     });
 
 
-    setup_data_user();
-
+    await setup_data_user();
 }
 
 
