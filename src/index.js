@@ -6,4 +6,8 @@ async function start() {
         .then(resp => {
             console.log(resp);
         });
+
+    fetch("https://dogapi.dog/api/v2/breeds")
+        .then(resp => resp)
+        .then(data => console.log(data))
 }
