@@ -6,7 +6,6 @@ const supabase = createClient(SUPABASE_URI, SUPABASE_KEY);
 
 const usernameTag = document.getElementById("username-tag");
 const photoUser = document.getElementById("photo-user");
-const env = process.env;
 
 const tg = window.Telegram.WebApp;
 
