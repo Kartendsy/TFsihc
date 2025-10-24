@@ -31,13 +31,15 @@ async function setup_data_user() {
 }
 
 async function startGame() {
-    setup_data_user();
-
     const K = kaplay({
         width:0,
         height:512,
         canvas:document.querySelector("#game-window")
     });
+
+
+    setup_data_user();
+
 }
 
 
