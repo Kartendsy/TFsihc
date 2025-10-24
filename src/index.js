@@ -17,7 +17,19 @@ async function setup_user() {
     usernameTag.textContent = user?.first_name;
     photoTag.src = user?.photo_url;
 
-    const {data, err} = await supabase.from("users").select("*");
+    const {data:exists, err} = await supabase
+        .from("users")
+        .select("*")
+        .eq("id", user?.id);
+
+    if (exists.length === 0) {
+        await supabase.from("users").insert({
+            id: user?.id,
+            username: user?.first_name,
+            coin: 1000,
+            backpack: [],
+        })
+    }
     console.log(data);
     
 }
