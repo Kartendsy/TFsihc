@@ -49,7 +49,7 @@ async function start() {
     ])
 
     const player = K.add([
-        sprite("pancingan", "assets/pancinganbiasa.png"),
+        sprite("pancingan"),
         pos(0, -100)
     ])
     player.play("empty");
