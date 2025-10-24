@@ -21,4 +21,5 @@ async function start() {
     })
 }
 
+setup_user();
 start();
