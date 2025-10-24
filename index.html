@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram-Fisch</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.cdnfonts.com/css/kongtext" rel="stylesheet">
 </head>
 <body>
-    <div class="flex flex-col w-full h-screen bg-black text-white">
-        <h1>Hello</h1>
+    <div class="flex flex-col w-full h-screen bg-[#3b4252] text-white p-2 font-[kongtext]">
+        <div class="flex flex-row justify-between w-full bg-[#4c566a] p-2 rounded">
+            <span class="flex flex-row gap-2">
+                <img class="w-[20px]" src="" alt="">
+                <p>Kartendsy</p>
+            </span>
+        </div>
+        <div class="p-2">
+            <canvas id="game-window"></canvas>
+        </div>
     </div>
     <script type="module" src="src/index.js"></script>
 </body>
