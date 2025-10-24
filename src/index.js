@@ -48,10 +48,11 @@ async function start() {
         pos(0, -100)
     ])
 
-    K.add([
+    const player = K.add([
         sprite("pancingan", "assets/pancinganbiasa.png"),
         pos(0, -100)
     ])
+    player.play("empty");
 }
 
 setup_user();
