@@ -10,13 +10,20 @@
 <body>
     <div class="flex flex-col w-full h-screen bg-[#3b4252] text-white p-2 font-[kongtext]">
         <div class="flex flex-row justify-between w-full bg-[#4c566a] p-2 rounded">
-            <span class="flex flex-row gap-2">
-                <img class="w-[20px]" src="" alt="">
-                <p>Kartendsy</p>
+            <span class="flex flex-col gap-2">
+                <span class="flex flex-row gap-5">
+                    <img class="w-[25px]" src="" alt="">
+                    <p>Kartendsy</p>
+                </span>
+                <p class="flex flex-row items-center"><img src="assets/Business-Money-Coin-Currency--Streamline-Pixel(1).svg" alt="">:10000</p>
             </span>
         </div>
         <div class="p-2">
-            <canvas id="game-window"></canvas>
+            <canvas class="rounded" height="300" id="game-window"></canvas>
+        </div>
+        
+        <div class="grid grid-cols-1">
+            <button class="bg-[#4c566a] p-2">Fish</button>
         </div>
     </div>
     <script type="module" src="src/index.js"></script>
