@@ -56,13 +56,13 @@ async function start() {
     K.onUpdate(()=>{
         player.play(anims[curr_anim]);
     })
-}
 
-function start_fish() {
-    curr_anim = 1;
-    console.log(anims[curr_anim]);
+    document.getElementById("fish-btn").addEventListener("click", ()=>{
+        curr_anim = 1;
+        console.log(anims[curr_anim]);
     
-    wait(5, () => curr_anim = 0);
+        wait(5, () => curr_anim = 0);
+    })
 }
 
 setup_user();
