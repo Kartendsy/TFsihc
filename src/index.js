@@ -10,7 +10,7 @@ const photoTag = document.getElementById("photoTag");
 const supabase = createClient("https://zcuxsqfqmxzjnigimmya.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpjdXhzcWZxbXh6am5pZ2ltbXlhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjEzMjAxNzAsImV4cCI6MjA3Njg5NjE3MH0.4To2aWcUeXsQsMqAvBOPc_feC8nqNAk3zm9HKSQbX_4")
 const tg = window.Telegram.WebApp;
 
-let curr_anim = 0;
+let curr_anim = "empty";
 
 async function setup_user() {
     const user = tg.initDataUnsafe?.user;
