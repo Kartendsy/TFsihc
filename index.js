@@ -6,7 +6,7 @@ const tg = window.Telegram.WebApp;
 tg.ready();
 tg.expand();
 
-usernameTag.textContent = tg.initDataUnsafe?.user?.first_name || "Anonim!";
+usernameTag.textContent = tg.initDataUnsafe?.user?.username || "Anonim!";
 
 kaplay({
     width:0,
