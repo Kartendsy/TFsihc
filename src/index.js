@@ -58,7 +58,9 @@ async function start() {
     })
 
     document.getElementById("fish-btn").addEventListener("click", ()=>{
-        curr_anim = "pos1";
+        let rand = Math.floor(Math.random() * 2);
+        let anims = ["pos1","pos2"];
+        curr_anim = anims[rand];
     
         wait(5, () => curr_anim = "empty");
     })
