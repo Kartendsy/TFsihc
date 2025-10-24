@@ -25,7 +25,6 @@ async function start() {
     loadSprite("sungai", "assets/sungaibiasa.png");
     loadSprite("pancingan", "assets/pancingbiasa.png", {
         sliceX:4,
-        sliceY:1,
         anims: {
             empty: {
                 from:0,
