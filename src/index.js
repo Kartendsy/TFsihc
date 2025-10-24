@@ -28,7 +28,8 @@ async function start() {
         anims: {
             empty: {
                 from:0,
-                to:0
+                to:0,
+                loop:true
             },
             pos1: {
                 from:1,
