@@ -19,9 +19,14 @@ async function setup_user() {
 
 
 async function start() {
+    loadSprite("sungai", "assets/sungaibiasa.png");
     const K = kaplay({
         canvas:document.getElementById("game-window")
     })
+
+    K.add([
+        sprite("sungai")
+    ])
 }
 
 setup_user();
