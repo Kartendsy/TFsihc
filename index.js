@@ -36,10 +36,8 @@ async function startGame() {
         height:512,
         canvas:document.querySelector("#game-window")
     });
-
-
-    await setup_data_user();
 }
 
 
+setup_data_user();
 startGame();
