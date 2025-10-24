@@ -16,6 +16,10 @@ async function setup_user() {
     const user = tg.initDataUnsafe?.user;
     usernameTag.textContent = user?.first_name;
     photoTag.src = user?.photo_url;
+
+    const {data, err} = supabase.from("users").select("*");
+    console.log(data);
+    
 }
 
 
