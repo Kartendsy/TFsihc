@@ -79,7 +79,9 @@ async function start() {
     
         wait(5, () => curr_anim = "empty");
     })
-}
 
 setup_user();
+
+}
+
 start();
