@@ -1,5 +1,5 @@
 import kaplay from 'https://cdn.jsdelivr.net/npm/kaplay@3001.0.19/+esm'
-import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.76.1/+esm'
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 import {SUPABASE_URI, SUPABASE_KEY} from "./env.js";
 
 const supabase = createClient(SUPABASE_URI, SUPABASE_KEY);
