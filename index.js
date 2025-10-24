@@ -2,6 +2,7 @@ import kaplay from 'https://cdn.jsdelivr.net/npm/kaplay@3001.0.19/+esm'
 import dotenv from 'https://cdn.jsdelivr.net/npm/dotenv@17.2.3/+esm'
 import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.76.1/+esm'
 
+dotenv.config();
 
 const supabase = createClient(process.env.DATABASE_URI, process.env.DATABASE_KEY);
 
