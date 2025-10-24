@@ -45,23 +45,22 @@ async function start() {
 
 
     K.add([
-        sprite("sungai"),
-        pos(0, -100)
+        K.sprite("sungai"),
+        K.pos(0, -100)
     ])
 
     const player = K.add([
-        sprite("pancingan"),
-        pos(0, -100)
+        K.sprite("pancingan"),
+        K.pos(0, -100)
     ])
     K.onUpdate(()=>{
-        player.play(anims[curr_anim]);
+        player.play(curr_anim);
     })
 
     document.getElementById("fish-btn").addEventListener("click", ()=>{
-        curr_anim = 1;
-        console.log(anims[curr_anim]);
+        curr_anim = "pos1";
     
-        wait(5, () => curr_anim = 0);
+        wait(5, () => curr_anim = "empty");
     })
 }
 
