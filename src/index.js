@@ -11,3 +11,6 @@ async function start() {
         .then(resp => resp)
         .then(data => console.log(data))
 }
+
+
+start();
