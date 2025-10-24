@@ -17,7 +17,7 @@ async function setup_user() {
     usernameTag.textContent = user?.first_name;
     photoTag.src = user?.photo_url;
 
-    const {data, err} = supabase.from("users").select("*");
+    const {data, err} = await supabase.from("users").select("*");
     console.log(data);
     
 }
