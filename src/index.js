@@ -23,7 +23,7 @@ async function start() {
         canvas:document.getElementById("game-window")
     })
     loadSprite("sungai", "assets/sungaibiasa.png");
-    loadSprite("pancingan", "assets/pancingbiasa.png", {
+    loadSprite("pancingan", "assets/pancinganbiasa.png", {
         sliceX:4,
         anims: {
             empty: {
