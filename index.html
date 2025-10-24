@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex flex-col bg-[#2e3440] p-2 w-full h-screen">
+        <div class="flex flex-row w-full justify-between p-2 rounded text-[#d8dee9] bg-[#4c566a]">
+            <span class="flex flex-row gap-2">
+                <img class="w-[24px]" src="https://avatar.iran.liara.run/public" alt="">
+                <p>Kartendsy</p>
+            </span>
+
+            <p>Coin : 100</p>
+        </div>
+        <div class="p-2 h-[300px]">
+            <canvas id="game-window"></canvas>
+        </div>
+        <div class="grid grid-cols-1">
+            <button class="bg-[#4c566a] p-2 rounded">Fish</button>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
