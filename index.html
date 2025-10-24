@@ -3,29 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
-    <link href="https://fonts.cdnfonts.com/css/kongtext" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Telegram-Fisch</title>
 </head>
 <body>
-    <div class="flex flex-col bg-[#2e3440] p-2 w-full h-screen font-[Kongtext]">
-        <div class="flex flex-row w-full justify-between p-2 rounded text-[#d8dee9] bg-[#4c566a]">
-            <span class="flex flex-row gap-2">
-                <img id="photo-user" class="w-[24px]" src="" alt="">
-                <p id="username-tag">Kartendsy</p>
-            </span>
-
-            <p>Coin : 100</p>
-        </div>
-        <div class="p-2 h-[300px]">
-            <canvas id="game-window"></canvas>
-        </div>
-        <div class="grid grid-cols-1">
-            <button class="bg-[#4c566a] p-2 rounded">Fish</button>
-        </div>
-    </div>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script type="module" src="index.js"></script>
+    <script type="module" src="src/index.js"></script>
 </body>
 </html>
