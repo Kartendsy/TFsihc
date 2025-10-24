@@ -60,6 +60,8 @@ async function start() {
 
 function start_fish() {
     curr_anim = 1;
+    console.log(anims[curr_anim]);
+    
     wait(5, () => curr_anim = 0);
 }
 
