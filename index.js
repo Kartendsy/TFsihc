@@ -8,6 +8,9 @@ tg.expand();
 
 usernameTag.textContent = tg.initDataUnsafe?.user?.username || "Anonim!";
 
+console.log(tg.initDataUnsafe?.user);
+
+
 kaplay({
     width:0,
     height:512,
