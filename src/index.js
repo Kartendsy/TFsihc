@@ -11,6 +11,7 @@ const supabase = createClient("https://zcuxsqfqmxzjnigimmya.supabase.co","eyJhbG
 const tg = window.Telegram.WebApp;
 
 let curr_anim = 0;
+let anims = ["empty", "pos1"];
 
 async function setup_user() {
     const user = tg.initDataUnsafe?.user;
@@ -53,7 +54,9 @@ async function start() {
         sprite("pancingan"),
         pos(0, -100)
     ])
-    player.play("empty");
+    K.onUpdate(()=>{
+        player.play(anims[curr_anim]);
+    })
 }
 
 function start_fish() {
