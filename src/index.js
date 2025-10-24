@@ -31,7 +31,7 @@ async function setup_user() {
         })
     }
 
-    coinTag.textContent = `: ${data[0].coin}`
+    coinTag.textContent = `: ${exists[0].coin}`
     console.log(data);
 
 }
