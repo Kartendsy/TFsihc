@@ -23,10 +23,33 @@ async function start() {
         canvas:document.getElementById("game-window")
     })
     loadSprite("sungai", "assets/sungaibiasa.png");
+    loadSprite("pancingan", "assets/pancingbiasa.png", {
+        sliceX:4,
+        sliceY:1,
+        anims: {
+            empty: {
+                from:0,
+                to:0
+            },
+            pos1: {
+                from:1,
+                to:1
+            },
+            pos2: {
+                from:2,
+                to:2
+            }
+        }
+    });
 
 
     K.add([
         sprite("sungai"),
+        pos(0, -100)
+    ])
+
+    K.add([
+        sprite("pancingan", "assets/pancinganbiasa.png"),
         pos(0, -100)
     ])
 }
